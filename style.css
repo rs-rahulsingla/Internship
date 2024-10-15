@@ -1,0 +1,95 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.recipe-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dish-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.prep-time {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #ff3b3b;
+}
+
+/* Ingredients and Steps List */
+ul, ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Progress bar */
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 10px;
+    display: none;
+}
+
+.progress {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+/* Hover and Transition Effects */
+ul li:hover, ol li:hover {
+    color: #ff6b6b;
+    transition: color 0.3s ease;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .recipe-card {
+        max-width: 100%;
+        margin: 20px;
+    }
+}
